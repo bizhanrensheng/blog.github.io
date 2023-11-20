@@ -1,0 +1,294 @@
+<!-- 采用主题：
+小枫个人引导页 - 个人主页
+开源地址：https://gitee.com/xfwlclub/xiao-fengs-personal-guide-page
+作者博客：www.xfabe.com
+作者：小枫
+ -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="applicable-device" content="pc, mobile">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="renderer" content="webkit">
+    <meta name="force-rendering" content="webkit"> 
+    <title>笔战人生个人引导页 - 个人主页</title>
+    <meta name="keywords" content="笔战人生个人引导页,主页,个人引导,引导页,个人主页">
+    <meta name="description" content="笔战人生个人引导页是一款简约开源的个人引导页源码，单页源码，没有后台">
+    <meta name="author" content="笔战人生">
+    <link rel="shortcut icon" href="https://pic2.58cdn.com.cn/nowater/webim/big/n_v2a6f9a5a2298442e8bf66b1c35a72bfec.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- 音乐播放器 -->
+    <link href="https://cdn.bootcdn.net/ajax/libs/aplayer/1.10.1/APlayer.min.css" rel="stylesheet">
+    <script src="static/js/APlayer.min.js"></script>
+</head>
+
+<body>
+    <header class="xf_header w">
+        <h1 style="font-size: 36px;">Personal guide page</h1>
+        <nav class="xf_nav">
+            <ul>
+                <li><a href="JavaScript:;"><img src="static/picture/home.svg" alt=""><span>首页</span></a></li>
+                <li><a href="JavaScript:;"><img src="static/picture/about.svg" alt=""><span>关于</span></a></li>
+                <li><a href="JavaScript:;"><img src="static/picture/wx.svg" alt=""><span>微信</span></a></li>
+                <!-- 要在 new-href 里修改跳转QQ的链接 http://wpa.qq.com/msgrd?v=3&uin=你的QQ号&site=qq&menu=yes -->
+                <li><a href="JavaScript:;" new-href="http://wpa.qq.com/msgrd?v=3&uin=1227368904&site=qq&menu=yes"><img src="static/picture/qq.svg" alt=""><span>QQ</span></a></li>
+            </ul>
+            <i class="xf_slither_color"></i>
+        </nav>
+    </header>
+    <section class="xf_section w">
+        <!-- 再src里修改图片链接 也可以直接用QQ头像 https://q2.qlogo.cn/headimg_dl?dst_uin=你的QQ号&amp;spec=100 替换下面的路径 -->
+        <div class="xf_author"><div class="xf_mb"></div><img src="static/picture/headimg_dl.jpg" alt="author"><span class="xf_look">被你发现啦</span></div>
+        <h5 class="xf_speech"><span class="type_code"></span></h5>
+        <div class="xf_box">
+            <div class="xf_site">
+                <strong class="xf_card"><span>首 页</span></strong>
+                <ul class="li_site">
+                    <!-- 这里添加站点 -->
+                    <li><a href="http://xianran.store/" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                    <li><a href="https://link3.cc/zscc6983" target="_blank" rel="noopener noreferrer">笔战人生</a></li>
+                    <li><a href="https://ifree8.com/" target="_blank" rel="noopener noreferrer">知识船仓</a></li>
+                </ul>
+            </div>
+            <div class="xf_about">
+                <strong class="xf_card"><span>关 于</span></strong>
+                <div class="tow_box">
+                    <div class="xf_say">
+                        <!-- 直接打回车换行就行了 -->
+                        <p>笔战人生，出生于02年，广东人.
+                            一条流浪狗，喜欢安静，无事请勿扰.
+                            你来了就左下角找首歌听吧~
+                            ............</p>
+                    </div>
+                    <div class="technology">
+                        <h3>我想有个......</h3>
+                        <div class="tech_box">
+                            <!-- 修改数值百分比 -->
+                            <h5>
+                                <span>早起早睡</span>
+                                <p><i style="width: 34%;"></i></p>
+                            </h5>
+                            <h5>
+                                <span>按时吃饭</span>
+                                <p><i style="width: 25%;"></i></p>
+                            </h5>
+                            <h5>
+                                <span>每天喝水</span>
+                                <p><i style="width: 1%;"></i></p>
+                            </h5>
+                            <h5>
+                                <span>沉默寡言</span>
+                                <p><i style="width: 90%;"></i></p>
+                            </h5>
+                            <h5>
+                                <span>生命剩余</span>
+                                <p><i style="width: 54%;"></i></p>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="xf_wx">
+                <strong class="xf_card"><span>微 信</span></strong>
+                <div class="myWX">
+                    <!-- 这里替换微信图片 -->
+                    <img src="static/picture/wx.png" alt="微信图片" class="wxImg">
+                    <p>这是俺的微信~</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="xf_footer w">
+        <meting-js server="netease" type="playlist" id="8199833036" name="苦橘馆" fixed="ture" mini="ture" autoplay="ture" loop="all" order="random" preload="auto" volume="0.5" mutex="ture" list-folded="ture">
+        </meting-js>
+        <p style="font-size: 12px;" align="right">            
+            本站已运行<span id="xf_timer"></span><br>
+            Copyright 2023 
+            <a href="https://mp.weixin.qq.com/s/z6jXKmTdi9yPKyadk48UHw" rel="noopener noreferrer">公众号『笔战人生』</a>
+            |&ensp;
+            Theme：
+            <a href="https://gitee.com/xfwlclub/xiao-fengs-personal-guide-page" target="_blank" rel="noopener noreferrer">小枫</a>
+            <br>
+            Used：
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            &ensp;|&ensp;
+            <a href="https://vercel.com/" target="_blank" rel="noopener noreferrer">Vercel</a>
+            &ensp;|&ensp;
+            <a href="https://github.com/willin/js.cool" target="_blank" rel="noopener noreferrer">js.cool</a>
+            &ensp;|&ensp;
+            <a href="https://github.com/metowolf/Meting" target="_blank" rel="noopener noreferrer">Meting</a>
+            &ensp;|&ensp;
+            <a href="https://v.iarc.top/" target="_blank" rel="noopener noreferrer">圆弧派API</a>
+        </p>
+
+    </footer>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/sweetalert.min.js"></script>
+    <script src="static/js/typed.umd.js"></script>
+    <script src="static/js/fireworks.js"></script>
+    <script src="static/js/flexible.js"></script>
+    <script src="static/js/index.js"></script>    
+    <script>
+        let xf_text = 
+        ['轻轻走路，用心生活','The best is always yet to come','Take your time',
+        '浅浅喜，静静爱；深深懂得，淡淡释怀','多思者必心累，心重者必心苦',
+        '人生两苦，想要却不得，拥有却失去','故事故事，便是故去的事情了，多说无益',
+        '一路行来，期望了成千上万次，失望了成千上万次，既便如此，他始终没有死心。',
+        '最苦不过相思，最远不过是阴阳','公子，风紧，可这回老黄不扯乎了','世上最远途，愈行愈远回家路',
+        '有些话不说就是个心结，说开了心头就有个伤疤，两者未必有好坏之分','人生不如意之事七八九，能与人言一二三都无',
+        '轩辕敬城请老祖宗赴死！','锦上花，雪中炭，雪上霜，火上油，风中絮，心头刀。',
+        '愿字起于心头，转瞬又死于心间','想念想念，一经想起便念念不忘了',
+        '世间遗憾事，往往起始于再见二字。','而世间幸运事，又往往在于之后，真正再见之时。','只可惜，遗憾事多，而幸运事少。',
+        '我不是过河卒，如何可以过河回头','那年武帝城头，老黄临终死而不倒，身边便是天下第二的王仙芝','老黄只是面北说了一句：“来，给少爷上酒呐。”','所谓心疼，便是你伤了别人，受伤的却是自己',
+        '人这一生，各有天命，有些人总能做愿意做的事情，很幸运。','有些人总能做喜欢做的事情，很幸福。','而有些人，只能做应该做的事情，甚至有些人，只能做别人觉得他应该做的事情。',
+        '自折木剑出江湖，我以手足换手足。','世事无奈人无奈，能说之时不想说，想说之时已是不能说',
+        '心安处即吾乡，但她从不曾告诉他，视线所及能望见他的身影她便心安。',
+        '上床时与鞋履相别，谁知合眼再无逢','你喜欢我，不需要理由。我不喜欢你，有万般理由。世间情爱，自古辛酸',
+        '世间人，纵有不舍，终有离别。世间事，纵有遗憾，且放心间','顺心如意何其难，不妨退而求其次，求个问心无愧',
+        '天不生我李淳罡，剑道万古如长夜','何谓喜欢一个人？就是见到对方之前，不知情为何物，错过之后，更不知情为何物。”',
+        '有些女子，明知很不好，可就是放不下的','世间痴情男儿，不论地位高低，大抵都是喜欢女子便是错了，而且希望能一辈子知错不改。',
+        '可能很快，但也可能是很久很久以后，你才会在某一天明白，','当你喜欢一个人，只是那个人不喜欢你，虽然不如两个人相互喜欢，','但比起你连一个喜欢的人都没有，要幸运很多',
+        '别的禅，我都不修。独你是我的禅，秀色可餐','徐凤年呢喃道：“徐婴，你怎么可以如此好看，','以至于我在神武城外，在借出春秋剑之前那一刻就想啊，跟你死在一起也不错。” ','她的欢喜相在哭，悲悯相在笑',
+        '死心看似远比伤心更重，但其实伤心远不如死心轻松','那日看雪，她从未看我，我从未看雪','你看天地雪景，我赏人间绝色',
+        '书上说，天下没有不散的宴席。不要怕，书上还说了，人生何处不相逢',
+        '今日解签，宜下江南，江南好，最好是红衣','人在江湖飘，哪能不挨刀;人在江湖飘，哪能总挨刀',
+        '北凉参差百万户 多少铁衣裹枯骨','别死，你死了，他会很寂寞的。他说过，世间男女，你最像他',
+        '我以双刀做聘礼，世间再无十八停 ——南宫仆射','仙人抚我顶，结发授长生。我抚仙人顶！一手断长生',
+        '提笔前，云蒸霞蔚我去见圣贤仙佛，提笔后，风清月白天地鬼神来拜我',
+        '很高兴遇见你们，叶白夔，徐骁，张巨鹿，元本溪，李义山，赵长陵，','顾剑棠，纳兰右慈，桓温，齐阳龙，曹长卿，李当心。','老人举起那盏油灯，敬你们，敬春秋，敬你们的金戈铁马，敬你们的写意风流',
+        '他就算不承认，也知道自己喜欢她。','不喜欢，如何能看了那么多年，却也总是看不厌？','只是不知道，原来是如此的喜欢',
+        '妇人眉眼弯弯，男人说他很幸运，她则觉得自己很幸福','有些人，总是安静站在身旁，','可当不能再见时，才知道甚至连模样都没有记清楚',
+        '天底下谁都有自己的道理可讲，可有些大道理都还是一样的',
+        '帮亲不帮理，这话说起来轻松解气，可','真当不平事窝囊事落在自己头上，才知道天地间最大的，还是一个理字，','而非情与义二字。','可恪理守礼一事，容易让人变成孤家寡人，不如情义来得轻松。 春秋三甲 黄龙士',
+        '世间人，难分黑白。世间事，却有对错','每个人都是从头到脚坏到骨子里的坏人，但每个人又都是某些人心目中顶天立地的英雄好汉',
+        '人间至味是寡淡啊','火大无烟，水顺无声，人之情苦至极者无语',
+        '说实话，这个世道，这个天下，一直让我褚禄山很不开心。','因为这个天下，让我最敬重的义父义母，他们的儿子，不开心',
+        '三见三不见','三见是那见风使舵，见钱眼开，见色起意','三不见则是不见兔子不撒鹰，不见棺材不掉泪，不见凉王不下跪',
+        '喜欢之人喜欢，世间第一欢喜事','我们人人都是贱货，站着说话不知道不腰疼的福气',
+        '世界上有两个我，一个想回家，一个想远行，','一个举杯邀明月，一个跪地捡碎银，','一个青衣白马徐凤年，一个人间烟火轻声语',
+        '无情人看似无情，反而最至情','咱们人啊，就如一杯晃动浊水，静置以后，方见杯底污垢。','有病方知身是苦，健时多向乱中忙',
+        '啃馒头的老百姓，钟鸣鼎食的王侯，各自的痛苦和惬意有格局高低之分，','但痛苦和惬意的重量，从无大小之别。',
+        '逍遥江湖的神仙眷侣，小地方的才子佳人，穷乡僻壤的白头偕老，','爱情或许各有壮阔平缓之分，但相互之间的感情其实并无多寡之别',
+        '给予希望然后让人失望，还不如一开始就什么都不要说','徐凤年说着不知是醉话还是梦话，“小二，上酒！”','温华还是一般无二，小声呢喃，“唉！客官酒来啦~”',
+        '送君千里直至峻岭变平川。惜别伤离临请饮酒六两三。',
+        '《六两三》',
+        '一两愿你江南多雨带油伞。',
+        '二两愿你酷暑可以轻摇扇。',
+        '三两愿你入冬莫忘添衣衫。',
+        '四两愿你年年多聚无离散。',
+        '五两愿你无病无忧心常宽。',
+        '六两愿你无风无雨长相欢。',
+        '六两三,余下三。',
+        '我在西北，一关接一关。',
+        '与你相隔，一山又一山。',
+        '最后只愿我，知道你平安'
+        ] // 这里修改介绍文字 😜
+        let xf_timer = new Date('2023/3/26').getTime() // 修改建站时间
+        let xf_off = 0 // 是否开启渐变背景动画 0 / 1 = 关闭 / 开启 【注意：开启后可能造成浏览器渲染卡顿】
+    </script>
+    <!-- 音乐播放器插件 https://v.iarc.top -->    
+    <script src="static/js/Meting.min.js"></script>
+    <!-- 刷新页面保持音乐播放进度 代码来源：https://yeelz.com/post/564.html https://juejin.cn/post/6844904085393506318 -->
+   <!--
+    <script>
+        ap = null
+        Object.defineProperty(document.querySelector('meting-js'),"aplayer",{
+            set: function(aplayer) {
+                ap=aplayer
+                ready();
+            }
+        });
+        isRecover = false;
+        function ready(){
+            ap.on('canplay', function () {
+                if(!isRecover){
+                    if(localStorage.getItem("musicIndex") != null){
+                        musicIndex = localStorage.getItem("musicIndex");
+                        musicTime = localStorage.getItem("musicTime");
+                        if(ap.list.index != musicIndex){
+                            ap.list.switch(musicIndex);
+                        }else{
+                            ap.seek(musicTime);
+                            ap.play();
+                            localStorage.clear();
+                            isRecover = true;
+                        }
+                    }else{
+                        isRecover = true;
+                    }
+                }
+            });
+        }
+        window.onbeforeunload = function(event) {
+            if(!ap.audio.paused){
+                musicIndex = ap.list.index;
+                musicTime = ap.audio.currentTime;
+                localStorage.setItem("musicIndex",musicIndex);
+                localStorage.setItem("musicTime",musicTime);
+            }
+        };
+    </script>
+    -->
+    <!-- 禁用F12代码 -->
+    <script>
+        //禁用右键
+        window.oncontextmenu = function () { return false; }
+           //禁止任何键盘敲击事件（防止F12和shift+ctrl+i调起开发者工具） 
+           /*    window.onkeydown = window.onkeyup = window.onkeypress = function () { 
+                   window.event.returnValue = false; 
+                   return false; 
+               } */
+   
+           //无限debugger
+           setInterval(function () {
+               check();
+           }, 2000);
+           var check = function () {
+               function doCheck(a) {
+                   if (('' + a / a)['length'] !== 1 || a % 20 === 0) {
+                       (function () { }['constructor']('debugger')());
+                   } else {
+                       (function () { }['constructor']('debugger')());
+                   }
+                   doCheck(++a);
+               }
+               try {
+                   doCheck(0);
+               } catch (err) { }
+           };
+           check();
+           //网站禁止选择文字
+           document.addEventListener('selectstart', function (e) {
+               e.preventDefault();
+           })
+           document.onkeydown = function () {
+               //禁止ctrl+u
+               if (event.ctrlKey && window.event.keyCode == 85) {
+                   return false;
+               }
+               //禁止 F12
+               if (window.event && window.event.keyCode == 123) {
+                   event.keyCode = 0;
+                   event.returnValue = false;
+               }
+               //禁止ctrl+s
+               if (event.ctrlKey && window.event.keyCode == 83) {
+                   return false;
+               }
+               //禁止 F5          
+               /* if (window.event && window.event.keyCode == 116) {
+                   event.keyCode = 0;
+                   event.returnValue = false;
+               }   */         
+           }
+    </script>
+   
+	<a href="https://smalltool.github.io/" style="display:none;">整站下载</a>
+</body>
+
+</html>
